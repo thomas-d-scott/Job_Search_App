@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: ;
+  --secondary-color: ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: "Oswald", Verdana, sans-serif;
+  color: #333;
+  background: #fff;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar CSS */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.9;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  padding: 0 30px;
+}
+
+.navbar .navigation ul {
+  display: flex;
+}
+
+.navbar a {
+  font-weight: 300;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 0 5px;
+  letter-spacing: 0.1rem;
+}
+
+.navbar a:hover {
+  border-top: steelblue 3px solid;
+  border-bottom: steelblue 3px solid;
+}
+
+/* Header */
+
+#hero {
+  background: url("../img/laptop.jpg") no-repeat center center / cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+#hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+#hero .content h1 {
+  font-size: 5rem;
+}
+
+#hero .content p {
+  font-size: 2.3rem;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#hero * {
+  z-index: 10;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 300;
+}
+
+.footer {
+  color: #fff;
+}
+
+/* Button */
+
+.btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: steelblue;
+  color: #fff;
+  transform: scale(0.98);
+}
+
+/* Pay Calculator */
+
+#pay-calculator {
+  text-align: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+#pay-calculator h1 {
+  padding-top: 20px;
+}
+
+.pay-calculator-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.calc-form {
+  padding: 0 20px 20px 20px;
+  width: 100%;
+}
+
+.calc-form h2 {
+  padding-bottom: 20px;
+}
+
+.calc-form .form-group {
+  margin-bottom: 20px;
+}
+
+.calc-form label {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.calc-form input,
+.calc-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.calc-form .btn {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.pay-details {
+  width: 100%;
+  text-align: center;
+}
+
+.pay-details h2 {
+  padding-bottom: 20px;
+}
+
+.pay-calc-message {
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* About */
+
+#about-info {
+  text-align: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+#about-info h1 {
+  padding-top: 20px;
+}
+
+.about-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-us {
+  padding: 0 20px 20px 20px;
+  width: 100%;
+}
+
+.about-us h2 {
+  padding-bottom: 20px;
+}
+
+.email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.email-form label {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.email-form input,
+.email-form select,
+.email-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.email-form .btn {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.email-form {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+}
+
+.email-form h2 {
+  padding-bottom: 20px;
+}
+
+.contact-form-message {
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Job Search */
+
+#job-search {
+  text-align: center;
+  max-width: 1268px;
+  margin: auto;
+}
+
+#job-search h1 {
+  padding-top: 20px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+#job-search h2 {
+  padding-bottom: 20px;
+}
+
+#job-search-form .form-group {
+  margin-bottom: 20px;
+}
+
+#job-search-form label {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#job-search-form input,
+#job-search-form select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+#job-search-form .btn {
+  width: 50%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+#search-results-output {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.job-search-details {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.job-search-details h3 {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.job-search-details h4 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.job-search-details p {
+  text-align: left;
+}
+
+.job-search-message {
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #search-results-output {
+    grid-template-columns: 1fr;
+  }
+
+  #job-search-form input,
+  #job-search-form select,
+  #job-search-form .btn,
+  .job-search-message {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pay-calculator-grid {
+    grid-template-columns: 1fr;
+  }
+}

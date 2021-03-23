@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Job Searcher | Pay Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="logo">JobSearcher</h1>
+        <div class="toggle"></div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pay.html">Pay Calculator</a></li>
+            <li><a href="./jobinfo.html">Job Search</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="pay-calculator">
+      <h1>Pay Calculator</h1>
+      <div class="pay-calculator-grid">
+        <div class="calc-form">
+          <h2>Enter Wage Details</h2>
+          <form id="pay-calculator-form" method="POST">
+            <div class="form-group">
+              <label for="wage">Wage</label>
+              <input type="text" name="wage" id="wage" />
+            </div>
+            <div class="form-group">
+              <label for="timeframe">Timeframe</label>
+              <select name="timeframe" id="timeframe">
+                <option value="">Select Timeframe</option>
+                <option value="hourly">Hourly</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="annually">Annually</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="hoursWorked">Hours Worked (Per Week)</label>
+              <input type="text" name="hoursWorked" id="hoursWorked" />
+            </div>
+            <button class="btn" type="submit">Calculate Pay</button>
+            <div class="pay-calc-message"></div>
+          </form>
+        </div>
+        <div class="pay-details">
+          <h2>Wage Details</h2>
+          <div class="wage-details"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Copyright &copy; 2021, Thomas Scott</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/calculatePay.js"></script>
+  </body>
+</html>
